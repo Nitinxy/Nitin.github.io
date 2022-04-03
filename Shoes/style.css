@@ -1,0 +1,67 @@
+body{
+    background-color: #FF945C;
+}
+
+.contact form{ 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 20px; 
+    margin-bottom: 20px; 
+}
+
+field { 
+    margin: 10px 5px; 
+
+} 
+
+.field label{ 
+    display: inline-block; 
+    width: 105px; 
+    vertical-align: top; 
+
+
+}
+
+.field input{ 
+    width: 200px; 
+    background-color: ghostwhite;
+} 
+
+.field textarea{ 
+    width: 200px; 
+}
+
+.field select{ 
+    width: 208px; 
+    background-color: whitesmoke;
+} 
+
+.contact fieldset{ 
+    border: 2px solid orangered; 
+    background-color: blanchedalmond;
+} 
+
+.contact fieldset legend{ 
+    font-size: 18px; 
+    font-weight: bold; 
+    padding: 0 10px; 
+    background-color: #5C95FF;
+} 
+
+.submit{ 
+    border: 2px solid #800d29; 
+    padding: 20px; 
+    margin-top: 9px; 
+} 
+
+.submit div{ 
+    margin: 0 0 10px 0; 
+} 
+
+.submit button{ 
+    border: 2px solid #800d29; 
+    background-color: #800d29; 
+    color: white; 
+    font-weight: bold; 
+    padding: 5px 10px; 
+} 

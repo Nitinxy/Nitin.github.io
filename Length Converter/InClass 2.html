@@ -1,0 +1,246 @@
+<!--Monil Patel, Student id:- 8775412
+	Rushil Shah, Student id:- 8751835-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CONVERTER</title>
+	<style>
+
+		html{
+			background-color: #333232;
+			height: 100%;
+		}
+
+		#container{
+			height: 200px;
+			width: 550px;
+			background-color: #F5E4C3;
+			display: grid;
+			margin: 0 auto;
+			border: 5px solid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-template-rows: 1fr 50px 1fr;
+		}
+
+		#input{
+			height: 25px;
+			width: 250px;
+			grid-column-start: 2;
+			grid-column-end: 4;
+			justify-self: center;
+			align-self: center;
+		}
+
+		#meter{
+			height: 25px;
+			width: 125px;
+			grid-column-start: 2;
+			grid-column-end: 3;
+			grid-row-start: 2;
+			grid-row-end: 2;
+		}
+
+		#feet{
+			height: 25px;
+			width: 125px;
+			grid-column-start: 3;
+			grid-column-end: 4;
+			grid-row-start: 2;
+			grid-row-end: 2;
+		}
+
+		#output{
+			height: 25px;
+			width: 250px;
+			grid-column-start: 2;
+			grid-column-end: 4;
+			grid-row-start: 3;
+			grid-row-end: 3;
+		}
+
+		#container{
+			height: 200px;
+			width: 550px;
+			background-color: #F5E4C3;
+			display: grid;
+			margin: 0 auto;
+			border: 5px solid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-template-rows: 1fr 50px 1fr;
+		}
+
+		#input{
+			height: 25px;
+			width: 250px;
+			grid-column-start: 2;
+			grid-column-end: 4;
+			justify-self: center;
+			align-self: center;
+		}
+
+		#meter{
+			height: 25px;
+			width: 125px;
+			grid-column-start: 2;
+			grid-column-end: 3;
+			grid-row-start: 2;
+			grid-row-end: 2;
+		}
+
+		#feet{
+			height: 25px;
+			width: 125px;
+			grid-column-start: 3;
+			grid-column-end: 4;
+			grid-row-start: 2;
+			grid-row-end: 2;
+		}
+
+		#output{
+			height: 25px;
+			width: 250px;
+			grid-column-start: 2;
+			grid-column-end: 4;
+			grid-row-start: 3;
+			grid-row-end: 3;
+		}
+
+		#container1{
+			height: 200px;
+			width: 550px;
+			background-color: #F5E4C3;
+			display: grid;
+			margin: 0 auto;
+			border: 5px solid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-template-rows: 1fr 50px 1fr;
+		}
+
+		#input1{
+			height: 25px;
+			width: 250px;
+			grid-column-start: 2;
+			grid-column-end: 4;
+			justify-self: center;
+			align-self: center;
+		}
+
+		#Celsius{
+			height: 25px;
+			width: 125px;
+			grid-column-start: 2;
+			grid-column-end: 3;
+			grid-row-start: 2;
+			grid-row-end: 2;
+		}
+
+		#Fahrenheit{
+			height: 35px;
+			width: 125px;
+			grid-column-start: 3;
+			grid-column-end: 4;
+			grid-row-start: 2;
+			grid-row-end: 2;
+		}
+
+		#output1{
+			height: 25px;
+			width: 250px;
+			grid-column-start: 2;
+			grid-column-end: 4;
+			grid-row-start: 3;
+			grid-row-end: 3;
+		}
+
+		#h{
+			font-size: 15px;
+			font-weight: bold;
+			position: relative;
+			left: 485px;
+			top: 52px;
+		}
+
+		#p{
+			font-size: 15px;
+			font-weight: bold;
+			position: relative;
+			left: 375px;
+			top: 154px;
+		}
+
+		#i{
+			font-size: 20px;
+			font-weight: bold;
+			color: #F5E4C3;
+			border: solid;
+			position: relative;
+			top: 50px;
+			left: 105px;
+		}
+
+	</style>
+</head>
+<body>
+
+	<text id = "h">Write your value here: </text>
+	<text id="p">Conversion: </text>
+
+	<div id="container">
+
+		<input type="text" id="input">
+		<button id="meter">Convert to Meter</button>
+		<button id="feet">Convert to Feet</button>
+		<input type="text" id="output">
+
+	</div>
+
+	<text id = "h">Write your value here: </text>
+	<text id="p">Conversion: </text>
+
+	<div id="container1">
+
+		<input type="text" id="input1">
+		<button id="Celsius">Convert to Celsius</button>
+		<button id="Fahrenheit">Convert to Fahrenheit</button>
+		<input type="text" id="output1">
+
+	</div>
+
+	<text id = "i">If you click on Convert to Meter after writing value then the initial value will be considered as Feet(vice-versa). Same for Celsius and Fahrenheit!</text>
+
+	<script type="text/javascript">
+
+		let meterbtn = document.getElementById('meter');
+		let feetbtn = document.getElementById('feet');
+
+		meterbtn.addEventListener('click', function(){
+		let input = document.getElementById('input').value;
+		document.getElementById('output').value = input / 3.281 + " Meter";
+
+		})
+
+		feetbtn.addEventListener('click', function(){
+		let input = document.getElementById('input').value;
+		document.getElementById('output').value = input * 3.281 + " Feet";
+
+		})
+
+		let Celsiusbtn = document.getElementById('Celsius');
+		let Fahrenheitbtn = document.getElementById('Fahrenheit');
+
+		Celsiusbtn.addEventListener('click', function(){
+		let input1 = document.getElementById('input1').value;
+		document.getElementById('output1').value = (input1 - 32) * 0.5556 + " Celsius";
+		})
+
+		Fahrenheitbtn.addEventListener('click', function(){
+		let input1 = document.getElementById('input1').value;
+		document.getElementById('output1').value = input1 * 1.8 + 32 + " Fahrenheit";
+		})
+
+	</script>
+
+</body>
+</html>
